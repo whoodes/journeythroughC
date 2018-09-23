@@ -1,4 +1,4 @@
-/***********************************
+/**************************************************
 // NAME:         Wyatt Hoodes
 //
 // HOMEWORK:     3b
@@ -18,7 +18,7 @@
 //               printAllRecords
 //               deleteRecord
 //
-************************************/
+**************************************************/
 
 #include "record.h"
 #include <stdio.h>
@@ -27,7 +27,7 @@
 extern int debugmode;
 
 
-/**************************************
+/************************************************************************
 //
 //  Function name: addRecord
 //
@@ -39,10 +39,10 @@ extern int debugmode;
 //                 name (char *) : contains the name for the record
 //                 address (char *) : contains the address for the record
 //
-//  Return values  1 : success 
+//  Return values  1 : success
 //      Note: this function has not been implemented.
 //
-****************************************/
+************************************************************************/
 
 int addRecord (struct record **start, int account, char *name, char *address)
 {
@@ -58,7 +58,7 @@ int addRecord (struct record **start, int account, char *name, char *address)
     return 1;
 }
 
-/***************************************
+/**************************************************************
 //
 //  Function name: printRecord
 //
@@ -70,7 +70,7 @@ int addRecord (struct record **start, int account, char *name, char *address)
 //  Return Values  1 : success
 //      Note: This function has not been implemented.
 //
-****************************************/
+**************************************************************/
 
 int printRecord (struct record *start, int account)
 {
@@ -81,12 +81,12 @@ int printRecord (struct record *start, int account)
         printf("printRecord call. account: %d", account);
         printf("\n----------------------\n");
         printf("\n***Debugmode***\n\n");
-    }   
-    
+    }
+
     return 1;
 }
 
-/***************************************
+/****************************************************
 //
 //  Function Name: printAllRecords
 //
@@ -94,11 +94,11 @@ int printRecord (struct record *start, int account)
 //      database.
 //
 //  Parameters:    start (struct record *) : N/A
-//  
+//
 //  Return values: 1 : success
 //      Note: This function has not been implemented.
 //
-****************************************/
+*****************************************************/
 
 void printAllRecords(struct record *start)
 {
@@ -112,7 +112,7 @@ void printAllRecords(struct record *start)
     }
 }
 
-/************************************
+/***************************************************************
 //
 //  Function name: deleteRecord
 //
@@ -124,7 +124,7 @@ void printAllRecords(struct record *start)
 //  Return values: 1 : success
 //      Note: This function has not been implemented.
 //
-*************************************/
+***************************************************************/
 
 int deleteRecord(struct record **start, int account)
 {
