@@ -1,0 +1,484 @@
+Script started on Sat 22 Sep 2018 08:32:26 PM HST
+]0;hoodesw@uhx02:~/homework3b[?1034huhx02:/home/h/hoodesw/homework3b >> ./userInterface
+
+
+Welcome to Banking Made Mo Bettah'.  Here, there are
+a number of great features to choose from.
+Please make a choice corresponding to the number from the selection below...
+
+1. Add a record to the database.
+2. Print a single record from the database.
+3. Print all records in the database.
+4. Delete a record from the database.
+5. Display options.
+0. Exit
+Choice: 6
+Please enter a number corresponding to the list...
+Choice: of  foo
+Please enter a number corresponding to the list...
+Choice: //
+Please enter a number corresponding to the list...
+Choice: 1 
+Please enter a number corresponding to the list...
+Choice: 1
+Please enter the account number: 
+
+An account number is required.
+
+1. Add a record to the database.
+2. Print a single record from the database.
+3. Print all records in the database.
+4. Delete a record from the database.
+5. Display options.
+0. Exit
+Choice: 1
+Please enter the account number: 1111    ff
+
+An account number is required.
+
+1. Add a record to the database.
+2. Print a single record from the database.
+3. Print all records in the database.
+4. Delete a record from the database.
+5. Display options.
+0. Exit
+Choice: 1
+Please enter the account number: 1234
+Please enter the name for the account: Foo Bar
+Please enter the street, city, state and zipcode.  Followed by a # sign on a new line.
+Address: Foo a Bar Lane
+Ohio Foo   F      Fouston t  , Texas
+45678
+#
+
+Choice 1 was completed successfully.
+
+1. Add a record to the database.
+2. Print a single record from the database.
+3. Print all records in the database.
+4. Delete a record from the database.
+5. Display options.
+0. Exit
+Choice: 2
+Please enter the account number: 
+
+An account number is required.
+
+1. Add a record to the database.
+2. Print a single record from the database.
+3. Print all records in the database.
+4. Delete a record from the database.
+5. Display options.
+0. Exit
+Choice: 2
+Please enter the account number: aa
+
+An account number is required.
+
+1. Add a record to the database.
+2. Print a single record from the database.
+3. Print all records in the database.
+4. Delete a record from the database.
+5. Display options.
+0. Exit
+Choice: 2
+Please enter the account number: 1234
+
+Choice 2 was completed successfully.
+
+1. Add a record to the database.
+2. Print a single record from the database.
+3. Print all records in the database.
+4. Delete a record from the database.
+5. Display options.
+0. Exit
+Choice: 3
+
+1. Add a record to the database.
+2. Print a single record from the database.
+3. Print all records in the database.
+4. Delete a record from the database.
+5. Display options.
+0. Exit
+Choice: 4
+Please enter the account number: foo
+
+An account number is required.
+
+1. Add a record to the database.
+2. Print a single record from the database.
+3. Print all records in the database.
+4. Delete a record from the database.
+5. Display options.
+0. Exit
+Choice: 4
+Please enter the account number: 123456
+
+Choice 4 was completed successfully.
+
+1. Add a record to the database.
+2. Print a single record from the database.
+3. Print all records in the database.
+4. Delete a record from the database.
+5. Display options.
+0. Exit
+Choice: 5
+
+1. Add a record to the database.
+2. Print a single record from the database.
+3. Print all records in the database.
+4. Delete a record from the database.
+5. Display options.
+0. Exit
+Choice: 
+1. Add a record to the database.
+2. Print a single record from the database.
+3. Print all records in the database.
+4. Delete a record from the database.
+5. Display options.
+0. Exit
+Choice: 0
+
+1. Add a record to the database.
+2. Print a single record from the database.
+3. Print all records in the database.
+4. Delete a record from the database.
+5. Display options.
+0. Exit
+Choice: ]0;hoodesw@uhx02:~/homework3buhx02:/home/h/hoodesw/homework3b >> ./userInterface dube[K[K[Kegubber
+
+userInterface: In function main: error: second command exists only as 'debug'
+]0;hoodesw@uhx02:~/homework3buhx02:/home/h/hoodesw/homework3b >> ./userinterfa[K[K[K[K[K[K[KInterface deubg [K[K[K[Kbug mode foo
+
+userInterface: In function main: error: exceeded maximum number of arguments
+]0;hoodesw@uhx02:~/homework3buhx02:/home/h/hoodesw/homework3b >> ./userInterface debug
+
+***Entering debugmode***
+
+
+Welcome to Banking Made Mo Bettah'.  Here, there are
+a number of great features to choose from.
+Please make a choice corresponding to the number from the selection below...
+
+***Debugmode***
+-------------------
+printOptions call
+-------------------
+***Debugmode***
+
+
+1. Add a record to the database.
+2. Print a single record from the database.
+3. Print all records in the database.
+4. Delete a record from the database.
+5. Display options.
+0. Exit
+Choice: 1
+
+***Debugmode***
+-------------------
+getAccount call: character array param: , Integer length param: 500
+-------------------
+***Debugmode***
+
+Please enter the account number: foo
+
+An account number is required.
+
+***Debugmode***
+-------------------
+printOptions call
+-------------------
+***Debugmode***
+
+
+1. Add a record to the database.
+2. Print a single record from the database.
+3. Print all records in the database.
+4. Delete a record from the database.
+5. Display options.
+0. Exit
+Choice: 1
+
+***Debugmode***
+-------------------
+getAccount call: character array param: foo, Integer length param: 500
+-------------------
+***Debugmode***
+
+Please enter the account number: 12345
+
+***Debugmode***
+-------------------
+getName call: Character array param: , integer length param: 500
+-------------------
+***Debugmode***
+
+Please enter the name for the account: Foo Bar Jackson
+
+***Debugmode***
+-------------------
+getAddress call: Character array param: , integer length param: 500
+-------------------
+***Debugmode***
+
+Please enter the street, city, state and zipcode.  Followed by a # sign on a new line.
+Address: 1234 a happy street
+alabama  ma ohio'4444     
+44444
+#
+
+***Debugmode***
+--------------------
+addRecord call. account: 12345, name: Foo Bar Jackson, address: 1234 happy street
+alabama ohio
+44444
+--------------------
+***Debugmode***
+
+
+***Debugmode***
+-------------------
+funcReport call: integer stat param: 1, character choice param: 1
+-------------------
+***Debugmode***
+
+
+Choice 1 was completed successfully.
+
+***Debugmode***
+-------------------
+printOptions call
+-------------------
+***Debugmode***
+
+
+1. Add a record to the database.
+2. Print a single record from the database.
+3. Print all records in the database.
+4. Delete a record from the database.
+5. Display options.
+0. Exit
+Choice: 2
+
+***Debugmode***
+-------------------
+getAccount call: character array param: 12345, Integer length param: 500
+-------------------
+***Debugmode***
+
+Please enter the account number: 
+
+An account number is required.
+
+***Debugmode***
+-------------------
+printOptions call
+-------------------
+***Debugmode***
+
+
+1. Add a record to the database.
+2. Print a single record from the database.
+3. Print all records in the database.
+4. Delete a record from the database.
+5. Display options.
+0. Exit
+Choice: 2
+
+***Debugmode***
+-------------------
+getAccount call: character array param: , Integer length param: 500
+-------------------
+***Debugmode***
+
+Please enter the account number: 11111
+
+***Debugmode***
+--------------------
+printRecord call. account: 11111
+----------------------
+
+***Debugmode***
+
+
+***Debugmode***
+-------------------
+funcReport call: integer stat param: 1, character choice param: 2
+-------------------
+***Debugmode***
+
+
+Choice 2 was completed successfully.
+
+***Debugmode***
+-------------------
+printOptions call
+-------------------
+***Debugmode***
+
+
+1. Add a record to the database.
+2. Print a single record from the database.
+3. Print all records in the database.
+4. Delete a record from the database.
+5. Display options.
+0. Exit
+Choice: 3
+
+***Debugmode***
+--------------------
+printAllRecords call.
+--------------------
+***Debugmode***
+
+
+***Debugmode***
+-------------------
+printOptions call
+-------------------
+***Debugmode***
+
+
+1. Add a record to the database.
+2. Print a single record from the database.
+3. Print all records in the database.
+4. Delete a record from the database.
+5. Display options.
+0. Exit
+Choice: 4
+
+***Debugmode***
+-------------------
+getAccount call: character array param: 11111, Integer length param: 500
+-------------------
+***Debugmode***
+
+Please enter the account number: 
+
+An account number is required.
+
+***Debugmode***
+-------------------
+printOptions call
+-------------------
+***Debugmode***
+
+
+1. Add a record to the database.
+2. Print a single record from the database.
+3. Print all records in the database.
+4. Delete a record from the database.
+5. Display options.
+0. Exit
+Choice: 4
+
+***Debugmode***
+-------------------
+getAccount call: character array param: , Integer length param: 500
+-------------------
+***Debugmode***
+
+Please enter the account number: foo
+
+An account number is required.
+
+***Debugmode***
+-------------------
+printOptions call
+-------------------
+***Debugmode***
+
+
+1. Add a record to the database.
+2. Print a single record from the database.
+3. Print all records in the database.
+4. Delete a record from the database.
+5. Display options.
+0. Exit
+Choice: 4
+
+***Debugmode***
+-------------------
+getAccount call: character array param: foo, Integer length param: 500
+-------------------
+***Debugmode***
+
+Please enter the account number: 11111
+
+***Debugmode***
+--------------------deleteRecord call. account: 11111
+--------------------
+
+***Debugmode***
+
+***Debugmode***
+-------------------
+funcReport call: integer stat param: 1, character choice param: 4
+-------------------
+***Debugmode***
+
+
+Choice 4 was completed successfully.
+
+***Debugmode***
+-------------------
+printOptions call
+-------------------
+***Debugmode***
+
+
+1. Add a record to the database.
+2. Print a single record from the database.
+3. Print all records in the database.
+4. Delete a record from the database.
+5. Display options.
+0. Exit
+Choice: 5
+
+***Debugmode***
+-------------------
+printOptions call
+-------------------
+***Debugmode***
+
+
+1. Add a record to the database.
+2. Print a single record from the database.
+3. Print all records in the database.
+4. Delete a record from the database.
+5. Display options.
+0. Exit
+Choice: 
+***Debugmode***
+-------------------
+printOptions call
+-------------------
+***Debugmode***
+
+
+1. Add a record to the database.
+2. Print a single record from the database.
+3. Print all records in the database.
+4. Delete a record from the database.
+5. Display options.
+0. Exit
+Choice: 0
+
+***Debugmode***
+-------------------
+printOptions call
+-------------------
+***Debugmode***
+
+
+1. Add a record to the database.
+2. Print a single record from the database.
+3. Print all records in the database.
+4. Delete a record from the database.
+5. Display options.
+0. Exit
+Choice: ]0;hoodesw@uhx02:~/homework3buhx02:/home/h/hoodesw/homework3b >> exit
+exit
+
+Script done on Sat 22 Sep 2018 08:38:48 PM HST

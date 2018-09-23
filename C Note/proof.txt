@@ -1,0 +1,9 @@
+Script started on Fri 21 Sep 2018 09:09:36 PM HST
+]0;hoodesw@uhx02:~/homework3b[?1034huhx02:/home/h/hoodesw/homework3b >> make
+gcc -ansi -pedantic-errors -Wall -c userInterface.c
+gcc -ansi -pedantic-errors -Wall -c dataFxns.c
+gcc -o userInterface userInterface.o dataFxns.o
+]0;hoodesw@uhx02:~/homework3buhx02:/home/h/hoodesw/homework3b >> exit
+exit
+
+Script done on Fri 21 Sep 2018 09:09:44 PM HST
