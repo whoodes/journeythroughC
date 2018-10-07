@@ -1,0 +1,9 @@
+Script started on Fri 05 Oct 2018 03:20:19 PM HST
+]0;hoodesw@uhx02:~/homework5[?1034huhx02:/home/h/hoodesw/homework5 >> make
+gcc -ansi -pedantic-errors -Wall -c iofunctions.c
+gcc -ansi -pedantic-errors -Wall -c driver.c
+gcc -o driver iofunctions.o driver.o
+]0;hoodesw@uhx02:~/homework5uhx02:/home/h/hoodesw/homework5 >> exit
+exit
+
+Script done on Fri 05 Oct 2018 03:20:26 PM HST

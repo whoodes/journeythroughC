@@ -1,0 +1,100 @@
+Script started on Fri 05 Oct 2018 03:49:03 PM HST
+]0;hoodesw@uhx02:~/homework5[?1034huhx02:/home/h/hoodesw/homework5 >> ls
+[0m[38;5;34mdriver[0m  driver.c  driver.o  iofunctions.c  iofunctions.h  iofunctions.o  Makefile  output.txt  proof.txt  record.h  records.txt
+]0;hoodesw@uhx02:~/homework5uhx02:/home/h/hoodesw/homework5 >> cat records.txt
+234234
+John Wayne
+123 fake st. cinncinati, OH
+
+124321
+Aberham Lincoln
+232 Gettysburg rd. Eastern America
+
+12312
+Franklin Roosevelt
+124 On a road street
+]0;hoodesw@uhx02:~/homework5uhx02:/home/h/hoodesw/homework5 >> cat new-records.txt
+cat: new-records.txt: No such file or directory
+]0;hoodesw@uhx02:~/homework5uhx02:/home/h/hoodesw/homework5 >> ./driver
+
+The file was successfully read from ./records.txt
+Number of customers read from the file: 3
+The following are the current values now stored in the account array: 
+account no: 234234
+name: John Wayne
+address: 123 fake st. cinncinati, OH
+
+account no: 124321
+name: Aberham Lincoln
+address: 232 Gettysburg rd. Eastern America
+
+account no: 12312
+name: Franklin Roosevelt
+address: 124 On a road street
+
+The file was successfully written as new-records.txt
+
+]0;hoodesw@uhx02:~/homework5uhx02:/home/h/hoodesw/homework5 >> ls
+[0m[38;5;34mdriver[0m    driver.o       iofunctions.h  Makefile         output.txt  record.h
+driver.c  iofunctions.c  iofunctions.o  new-records.txt  proof.txt   records.txt
+]0;hoodesw@uhx02:~/homework5uhx02:/home/h/hoodesw/homework5 >> cat new-records.txt
+234234
+John Wayne
+123 fake st. cinncinati, OH
+
+124321
+Aberham Lincoln
+232 Gettysburg rd. Eastern America
+
+12312
+Franklin Roosevelt
+124 On a road street
+
+]0;hoodesw@uhx02:~/homework5uhx02:/home/h/hoodesw/homework5 >> chmod -w new-reocrds.[K[K[K[K[K[Kcords.txt
+]0;hoodesw@uhx02:~/homework5uhx02:/home/h/hoodesw/homework5 >> ./driver
+
+The file was successfully read from ./records.txt
+Number of customers read from the file: 3
+The following are the current values now stored in the account array: 
+account no: 234234
+name: John Wayne
+address: 123 fake st. cinncinati, OH
+
+account no: 124321
+name: Aberham Lincoln
+address: 232 Gettysburg rd. Eastern America
+
+account no: 12312
+name: Franklin Roosevelt
+address: 124 On a road street
+
+There was an error when writing the file
+
+]0;hoodesw@uhx02:~/homework5uhx02:/home/h/hoodesw/homework5 >> rm rc[Kecords.txt
+]0;hoodesw@uhx02:~/homework5uhx02:/home/h/hoodesw/homework5 >> ./driver
+There was an error when attempting to read from the file ./records.txt
+There was an error when writing the file
+
+]0;hoodesw@uhx02:~/homework5uhx02:/home/h/hoodesw/homework5 >> cat new-records.txt
+234234
+John Wayne
+123 fake st. cinncinati, OH
+
+124321
+Aberham Lincoln
+232 Gettysburg rd. Eastern America
+
+12312
+Franklin Roosevelt
+124 On a road street
+
+]0;hoodesw@uhx02:~/homework5uhx02:/home/h/hoodesw/homework5 >> chmnod [K[K[K[Kod +w new-records.txt
+]0;hoodesw@uhx02:~/homework5uhx02:/home/h/hoodesw/homework5 >> ./driver
+There was an error when attempting to read from the file ./records.txt
+The file was successfully written as new-records.txt
+
+]0;hoodesw@uhx02:~/homework5uhx02:/home/h/hoodesw/homework5 >> cat new-records.txt
+]0;hoodesw@uhx02:~/homework5uhx02:/home/h/hoodesw/homework5 >> exit
+exit
+
+Script done on Fri 05 Oct 2018 03:51:11 PM HST
