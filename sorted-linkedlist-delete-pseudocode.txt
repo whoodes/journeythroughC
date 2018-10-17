@@ -1,0 +1,31 @@
+--------------------------
+deleteRecord
+--------------------------
+
+define an int called status
+define a pointer to a record called temp
+define a pointer to a record called previous
+
+copy from start to temp
+copy from -1 to status
+
+while (temp does not equal NULL AND accountno in the record whose address is at temp is equal to uaccountno)
+    if (status is equal to -1)
+        copy from 0 to status
+    copy from next in the record whose address is at temp to start
+    release the space whose address is in temp
+    copy from start to temp
+
+if (status is equal to -1)
+    while (temp does not equal NULL)
+        while (temp does not equal NULL AND accountno in the record whose address is at temp does not equal accountno)
+            copy from temp to previous
+            copy from next in the record whose address is at temp to temp
+        if (temp does not equal NULL)
+            if (status is equal to -1)
+                copy from 0 to status
+            copy from next in the record whose address at at temp to next in the record whose address is at previous
+            release the space whose address is at temp
+            copy from next in the record whose address is at previous to temp
+
+return status
