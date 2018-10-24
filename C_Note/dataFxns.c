@@ -54,7 +54,6 @@ int writefile(struct record *, char []);
 
 int fileExists(const char *filename)
 {
-
     FILE *file;
  
     int status = 0;
