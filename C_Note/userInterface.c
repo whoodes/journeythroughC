@@ -50,13 +50,12 @@ void getAddress(char input[], int length)
     if (debugmode == 1)
     {
         printf("\n***Debugmode***\n");
-        printf("-------------------\n");
-        printf("getAddress call: Character array param: %s, integer length param: %d", input, length);
-        printf("\n-------------------");
-        printf("\n***Debugmode***\n\n");
+        printf("--------------------------------------------------------\n");
+        printf("getAddress call: Character array param: %s, \ninteger length param: %d", input, length);
+        printf("\n--------------------------------------------------------\n\n");
     }
 
-    printf("Please enter the street, city, state and zipcode.  Followed by a # sign on a new line.\n");
+    printf("Please enter the street, city, state and zipcode. \nFollowed by a # sign on a new line.\n");
     printf("Address: ");
 
     while (temp[0] != '#')
@@ -91,10 +90,9 @@ void getName(char input[], int length)
     if (debugmode == 1)
     {
         printf("\n***Debugmode***\n");
-        printf("-------------------\n");
-        printf("getName call: Character array param: %s, integer length param: %d", input, length);
-        printf("\n-------------------");
-        printf("\n***Debugmode***\n\n");
+        printf("--------------------------------------------------------\n");
+        printf("getName call: Character array param: %s, \ninteger length param: %d", input, length);
+        printf("\n--------------------------------------------------------\n\n");
     }
 
     printf("Please enter the name for the account: ");
@@ -125,10 +123,9 @@ long getAccount(char input[], int length)
     if (debugmode == 1)
     {
         printf("\n***Debugmode***\n");
-        printf("-------------------\n");
-        printf("getAccount call: character array param: %s, Integer length param: %d", input, length);
-        printf("\n-------------------");
-        printf("\n***Debugmode***\n\n");
+        printf("--------------------------------------------------------\n");
+        printf("getAccount call: character array param: %s, \nlong length param: %d", input, length);
+        printf("\n--------------------------------------------------------\n\n");
     }        
   
     printf("Please enter the account number: ");
@@ -158,10 +155,10 @@ void printOptions()
     if (debugmode == 1 )
     {
         printf("\n\n***Debugmode***\n");
-        printf("-------------------\n");
+        printf("--------------------------------------------------------\n");
         printf("printOptions call");
-        printf("\n-------------------");
-        printf("\n***Debugmode***\n\n");
+        printf("\n--------------------------------------------------------\n");
+
     }
 
     printf("\n1. Add a record to the database.\n");
@@ -170,7 +167,7 @@ void printOptions()
     printf("4. Delete a record from the database.\n");
     printf("5. Display options.\n");
     printf("0. Exit\n");
-    printf("Choice: ");
+    printf("\nChoice: ");
 }
 
 /*************************************************************************
@@ -192,19 +189,30 @@ void funcReport(int stat, char choice)
     if (debugmode == 1)
     { 
         printf("\n***Debugmode***\n");
-        printf("-------------------\n");
-        printf("funcReport call: integer stat param: %d, character choice param: %c", stat, choice);
-        printf("\n-------------------");
-        printf("\n***Debugmode***\n\n");
+        printf("--------------------------------------------------------\n");
+        printf("funcReport call: integer stat param: %d, \ncharacter choice param: %c", stat, choice);
+        printf("\n--------------------------------------------------------\n");
+
     }
 
-    if (stat == 1)
+    if (stat == 0)
     {
-        printf("\nChoice %c was completed successfully.\n", choice);
+        if (choice == '1')
+        {
+            printf("\nThe record was successfully added!\n"); 
+        }
+        else if (choice == '4')
+        {
+            printf("\nThe record was successfully deleted!\n");
+        }
+      
     }
     else
     {
-        printf("\nThe attempt of choice %c failed.\n", choice);
+        if (choice == '2' || choice == '4')
+        {
+            printf("\nNo such record was found!\n");
+        }
     }
 }
 
@@ -233,14 +241,15 @@ int main(int argc, char **argv)
     int inputSize;
     int functionStatus;
     long accountNum;
-    struct record * start;
-    
-    start = NULL;
+
+    struct record *start = NULL;
     inputSize = 500;
     validExecute = 1;
     optionInput[0] = '9'; 
     
-    /*  Begin validExecute test  block  */
+    /************************************
+     *  Begin validExecute test  block  *
+     ************************************/
 
     if (argc > 2)
     {
@@ -258,24 +267,28 @@ int main(int argc, char **argv)
         debugmode = 1;
     }
     
-    /*  End validExecute test block  */
+    /*********************************
+     *  End validExecute test block  *
+     *********************************/
 
     if (validExecute == 1)
     {
+        functionStatus = readfile(&start, "records.txt");
+       
         printf("\n\nWelcome to Banking Made Mo Bettah'.  Here, there are\n");
         printf("a number of great features to choose from.\n");
-        printf("Please make a choice corresponding to the number from the selection below...\n");
+        printf("Please make a choice corresponding to the number from the selection below...\n\n");
        
-        /*  Begin Menu loop block  */
- 
+        /***************************
+         *  Begin Menu loop block  *
+         ***************************/
+
         while (optionInput[0] != '0')
         {
             printOptions();
             fgets(optionInput, 100, stdin);
             optionLen = strlen(optionInput);
-            
-            /*  Begin check valid option input block  */ 
-    
+
             while (optionInput[0] < '0' || optionInput[0] > '5' || optionLen > 2)
             {
                 printf("Please enter a number corresponding to the list...\n");
@@ -283,8 +296,10 @@ int main(int argc, char **argv)
                 fgets(optionInput, 100, stdin);
                 optionLen = strlen(optionInput);
             }
-           
-            /*  End check valid option input block  */
+
+            /********************
+             * 1 = add a record *
+             ********************/
 
             if (optionInput[0] == '1')
             {
@@ -298,52 +313,110 @@ int main(int argc, char **argv)
                 {
                     getName(strName, inputSize);
                     getAddress(strAddress, inputSize);
-
-                    functionStatus = addRecord(&start, accountNum, strName, strAddress);
-                    funcReport(functionStatus, optionInput[0]);
+                    
+                    if (strlen(strName) <= 25 && strlen(strName) > 2 && 
+                        strlen(strAddress) <= 80 && strlen(strAddress) > 5)
+                    {
+                        functionStatus = addRecord(&start, accountNum, strName, strAddress);
+                        funcReport(functionStatus, optionInput[0]);
+                    }
+                    else
+                    {
+                        printf("\nAn error occurred when attempting to add the previous record\n");
+                        printf("\nPlease be sure that...\n");
+                        printf("\nThe length of the name is greater than 2 characters and does\n");
+                        printf("not exceed 25 characters.  The length of the address is greater");
+                        printf("\nthan five characters and does not exceed 80 characters. \nPlease try again.\n");
+                    }  
+                  
+                    strcpy(strAddress, "");
                 }
-                
             }
+
+            /**********************
+             * 2 = print a record *
+             **********************/
+            
             else if (optionInput[0] == '2')
             {
-                accountNum = getAccount(strAccount, inputSize);
-
-                if (accountNum == 0L)
+                if (start != NULL)
                 {
-                    printf("\nAn account number is required.\n");
+                    accountNum = getAccount(strAccount, inputSize);
+
+                    if (accountNum == 0L)
+                    {
+                        printf("\nAn account number is required.\n");
+                    }
+                    else
+                    {
+                        functionStatus = printRecord(start, accountNum);
+                        funcReport(functionStatus, optionInput[0]);
+                    }
                 }
                 else
                 {
-                    functionStatus = printRecord(start, accountNum);
-                    funcReport(functionStatus, optionInput[0]);
+                    printf("\nThere are no records! Go add some customers!\n");
                 } 
             }
+
+            /*************************
+             * 3 = print all records *
+             *************************/
+
             else if (optionInput[0] == '3')
             {
                 printAllRecords(start);
             }
+
+            /***********************
+             * 4 = delete a record *
+             ***********************/
+
             else if (optionInput[0] == '4')
             {
-                accountNum = getAccount(strAccount, inputSize);
-              
-                if (accountNum == 0L)
+                if (start != NULL)
                 {
-                    printf("\nAn account number is required.\n");
+                    accountNum = getAccount(strAccount, inputSize);
+              
+                    if (accountNum == 0L)
+                    {
+                        printf("\nAn account number is required.\n");
+                    }
+                    else
+                    {
+                        functionStatus = deleteRecord(&start, accountNum);
+                        funcReport(functionStatus, optionInput[0]);
+                    }
                 }
                 else
                 {
-                    functionStatus = deleteRecord(&start, accountNum);
-                    funcReport(functionStatus, optionInput[0]);
-                }
+                    printf("\nThere are no records! What happens when a bank goes bankrupt?\n");
+                } 
             }
-            else
+
+            /*********************
+             * 5 = print options *
+             *********************/
+
+            else if (optionInput[0] == '5')
             {
                 printOptions();
             }
         }
+     
+        /*************************
+         *  End Menu loop block  *
+         *************************/
 
-        /*  End Menu loop block  */
-
+        functionStatus = writefile(start, "records.txt");
+        if (functionStatus == 0)
+        {
+            printf("\n\nRecords were successfully written to: records.txt\n\n");
+        }
+        else
+        {
+            printf("\n\nThere was an error when attempting to write records to: records.txt\n\n");
+        }
     }
 
     return 0;
