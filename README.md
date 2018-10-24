@@ -14,7 +14,7 @@ completed.  ~~deleteRecorded pseudocode coming soon...~~ (already added)
 
 
 
-UPDATE: C_Note has had all data functions implemented.  Additionaly, a readfile function 
+UPDATE: On 10/24/2018, C_Note has had all data functions implemented.  Additionaly, a readfile function 
 runs as the program starts up and writes the data from the linked list to the file
 upon exit.  If the file exists, it is over-written.  Also, cleaned up debugger metadata
 appearance.
