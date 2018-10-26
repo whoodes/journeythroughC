@@ -12,7 +12,7 @@ Initial banking program commit on 9/22/2018.  Initiate Phase II.
 
 #### Update: 
 Added IO functions and driver on 10/06/2018.  addRecord pesudocode
-completed.  ~~deleteRecorded pseudocode coming soon...~~ (already added)
+completed.  ~~deleteRecorded pseudocode coming soon~~ (already added)
 
 #### Update: 
 On 10/24/2018, C_Note has had all data functions implemented.  Additionaly, a readfile function 
