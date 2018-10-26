@@ -13,8 +13,8 @@ outcomes of each group of tests, i.e., function tests, start up tests, etc...
 Each possible start up to the program was tested to ensure correct functionality.
 This included running the program with too many arguments, incorrect arguments, as well
 as the correct usages.  All of these tests were considered successful.  When the
-user attempted any command line arguments other than the ./<program name> or
-./<program name> debug, the correct error messages were displayed.  When the user
+user attempted any command line arguments other than the ./\<program name\> or
+./\<program name\> debug, the correct error messages were displayed.  When the user
 ran the program without the debug argument, no debug data was displayed.  On the other
 hand when the debug command was included, debug data was neatly displayed to the user.
 
