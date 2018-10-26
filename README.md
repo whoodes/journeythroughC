@@ -1,21 +1,15 @@
-# Heaps, and stacks, and pointers, oh my...
+# I came, I saw, I coded
 
-A repo to track my work throughout my program structure course.  The project for
-the next couple of months will be building a mock banking database program.
+This project consists of the work I have completed throughout my program structure course.
+All of the coding thus far (10/25/2018) has been writen in C.  The outcome thus far has
+been a firm grasp on the language itself, as well as understanding complex pointer manipulation.
+This being exemplified in the [C Note](https://whoodes.github.io/journeythroughC/C_Note/) 
+mock banking program.  A better understanding of how programming works in a low-level langauge has
+strengthened my skills as a programmer.  The refining of my thought process in regards to debugging 
+and problem solving has developed as a result.  Implementing a linked list abstract data type in C, 
+along with the dynamic set operations including insert(x), delete(x), search(x), successor(x), and 
+predecessor(x) was a very humbling and rewarding experience.
 
-I will commit each subsequent module of the bank program.  The initial stage is
-building the basic menu system, to be completed by 9/22/2018, along with
-skeleton definitions of the included functions.
+## Not done yet
 
-#### Update: 
-Initial banking program commit on 9/22/2018.  Initiate Phase II.
-
-#### Update: 
-Added IO functions and driver on 10/06/2018.  addRecord pesudocode
-completed.  ~~deleteRecorded pseudocode coming soon~~ (already added)
-
-#### Update: 
-On 10/24/2018, C_Note has had all data functions implemented.  Additionaly, a readfile function 
-runs as the program starts up and writes the data from the linked list to the file
-upon exit.  If the file exists, it is over-written.  Also, cleaned up debugger metadata
-appearance.
+Now, comes bitwise operations and a brief introduction into c++. 
