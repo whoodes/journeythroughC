@@ -18,7 +18,7 @@ user attempted any command line arguments other than the ./\<program name\> or
 ran the program without the debug argument, no debug data was displayed.  On the other
 hand when the debug command was included, debug data was neatly displayed to the user.
 
-The add record function was tested exhaustively.  This was in conjunctions with the
+The add record function was tested exhaustively.  This was in conjunction with the
 print all records function, to ensure that correct functionality was resulting from
 adding records.  The add record function was tested with no account number, and the
 correct error message was displayed.  Adding a record was attempted with the correct
@@ -27,11 +27,11 @@ also performed against a name and/or address exceeding the char[] length of the
 particular data value.  Both instances were a success, the attempt to add the record
 was rejected and the appropriate error message was clearly printed to the user.
 When records were added, repeating accounts were accepted.  Adding records into the
-list resulted in a sorted list based on the account number as the sorting criteria.
+list resulted in a sorted list based on the account number as the sorting key.
 Tests were done to ensure proper ordering of the list, with records added to the
-beginning, middle and end resulting in the desired outcome.
+beginning, middle and end, all resulting in the desired outcome.
 
-In regards to the print all records, testing was done when no records existed in
+In regard to the print all records, testing was done when no records existed in
 the system, when a single record existed, and also when multiple records existed.
 In all instances the desired output was seen.  A message was displayed to the user
 when the linked list was empty, and the records where printed in order by account
@@ -54,10 +54,10 @@ normal if no records text file exists.  If the file does exist, records are adde
 to the linked list by means of the add record function.  Upon exiting the program,
 the records text file is written over with the current linked list data, replacing
 all previous data.  Both functions were tested with no records, one record, as well
-as multiple records.  In all instances, the results were satisfying.There is also
+as multiple records.  In all instances, the results were satisfying.  There is also
 a print menu options option, but that did not require much testing.
 
-Throughout running all of these tests, the debug was utilized.  Working efficiently
+Throughout running all of these tests, debug mode was utilized.  Working efficiently
 and showing meta data for every function existing within the program.  Whenever a
 function is called the debug information is shown in a comment like block that is
 easily distinguishable from the actual program text being output to the screen.
