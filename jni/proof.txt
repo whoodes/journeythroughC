@@ -1,0 +1,9 @@
+Script started on Tue 27 Nov 2018 07:20:52 PM HST
+]0;hoodesw@uhx02:~/hw9[?1034huhx02:/home/h/hoodesw/hw9 >> make Homw[Kework9
+javac Homework9.java
+javah Homework9
+gcc -ansi -pedantic-errors -Wall -shared -o libHomework9.so Homework9.c -fPIC -I/usr/java/jdk1.8.0_131/include -I/usr/java/jdk1.8.0_131/include/linux
+]0;hoodesw@uhx02:~/hw9uhx02:/home/h/hoodesw/hw9 >> exit
+exit
+
+Script done on Tue 27 Nov 2018 07:21:05 PM HST

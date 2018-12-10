@@ -1,0 +1,63 @@
+Script started on Tue 27 Nov 2018 07:26:52 PM HST
+]0;hoodesw@uhx02:~/hw9[?1034huhx02:/home/h/hoodesw/hw9 >> exitmake Homework9exit[Kmake Homework9exit[Kvi Homework9.cjava[5PMakefile java -Djava.library.path=/home/h/hoodesw/hw9/ Homework9
+
+~~~FACTOR CHECKER 3000~~~
+
+Check the factors on any Natural number!
+
+Please enter an integer: 850
+
+    Index    Factor
+        1         1
+        2         2
+        3         5
+        4        10
+        5        17
+        6        25
+        7        34
+        8        50
+        9        85
+       10       170
+       11       425
+       12       850
+
+]0;hoodesw@uhx02:~/hw9uhx02:/home/h/hoodesw/hw9 >> java -Djava.library.path=/home/h/hoodesw/hw9/ Homework9
+
+~~~FACTOR CHECKER 3000~~~
+
+Check the factors on any Natural number!
+
+Please enter an integer: 0
+
+Hmm, I do not recognize the strange symbols...
+
+Please enter an integer: l qwerty      belmman    lman
+
+Please adhere to the rules, friend!
+
+Please enter an integer: -3
+
+Hmm, I do not recognize the strange symbols...
+
+Please enter an integer:  
+
+72
+
+    Index    Factor
+        1         1
+        2         2
+        3         3
+        4         4
+        5         6
+        6         8
+        7         9
+        8        12
+        9        18
+       10        24
+       11        36
+       12        72
+
+]0;hoodesw@uhx02:~/hw9uhx02:/home/h/hoodesw/hw9 >> exit
+exit
+
+Script done on Tue 27 Nov 2018 07:30:41 PM HST
